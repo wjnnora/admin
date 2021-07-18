@@ -1,146 +1,172 @@
-<header class="navbar navbar-light sticky-top bg-vooo flex-md-nowrap p-0">
-  <div class="navbar-brand col-md-3 col-lg-2 me-0 px-3">
-    <a href="/home" class="text-center"><img src="http://vooo.pro/app/img/logo.gif" width=150/></a>
-  </div>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>  
-  <div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-      <a class="link-dark rounded px-3" href="#">Sign out</a>
+<div id="master-content">
+  
+  <header class="t-header">
+    <div class="navbar navbar-light sticky-top bg-vooo flex-md-nowrap p-0">
+      <div class="navbar-brand col-md-3 col-lg-2 me-0 px-3">
+        <a href="/home" class="text-center"><img src="http://vooo.pro/app/img/logo.gif" width=150 /></a>
+      </div>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-nav">
+        <div class="nav-item text-nowrap">
+          <a class="link-dark rounded px-3" href="#">Sign out</a>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+  
+  <aside class="t-aside">
+    <div class="flex-shrink-0 p-3 bg-vooo mt-0" style="width: 280px;">
+      <input class="form-control mb-2" placeholder="Buscar">
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center">
+            Dashboard
+          </button>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#onboarding" aria-expanded="false">
+            Onboard e Monitoração
+          </button>
+          <div class="collapse" id="onboarding">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Onboard</a></li>
+              <li><a href="#" class="link-dark rounded">Autorização Cielo</a></li>
+              <li><a href="#" class="link-dark rounded">Monitoração</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#clientes" aria-expanded="false">
+            Clientes
+          </button>
+          <div class="collapse" id="clientes">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a routerLink="/clientes" class="link-dark rounded">Listar</a></li>
+              <li><a routerLink="/clientes/novo" class="link-dark rounded">Novo</a></li>
+              <li><a routerLink="/clientes/conectores" class="link-dark rounded">Conectores</a></li>
+              <li><a href="#" class="link-dark rounded">Pagador</a></li>
+              <li><a href="#" class="link-dark rounded">Grupos Econômicos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#provedores" aria-expanded="false">
+            Provedores
+          </button>
+          <div class="collapse" id="provedores">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Listar</a></li>
+              <li><a href="#" class="link-dark rounded">Novo</a></li>
+              <li><a href="#" class="link-dark rounded">Mapeamento</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#agregadores" aria-expanded="false">
+            Agregadores
+          </button>
+          <div class="collapse" id="agregadores">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Listar</a></li>
+              <li><a href="#" class="link-dark rounded">Novo Agregador</a></li>
+              <li><a href="#" class="link-dark rounded">Listar Usuários</a></li>
+              <li><a href="#" class="link-dark rounded">Novo Usuário Agregador</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#bilhetagem" aria-expanded="false">
+            Bilhetagem
+          </button>
+          <div class="collapse" id="bilhetagem">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Listar</a></li>
+              <li><a href="#" class="link-dark rounded">Nova Bilhetagem</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#usuarios" aria-expanded="false">
+            Usuários
+          </button>
+          <div class="collapse" id="usuarios">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Listar</a></li>
+              <li><a href="#" class="link-dark rounded">Novo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#monitoramento" aria-expanded="false">
+            Monitoramento de Extratos
+          </button>
+          <div class="collapse" id="monitoramento">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Resumo</a></li>
+              <li><a href="#" class="link-dark rounded">Detalhes</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#bins" aria-expanded="false">
+            Bins
+          </button>
+          <div class="collapse" id="bins">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Consultar</a></li>
+              <li><a href="#" class="link-dark rounded">Efetividade</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#arquivos" aria-expanded="false">
+            Arquivos
+          </button>
+          <div class="collapse" id="arquivos">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Caminhos</a></li>
+              <li><a href="#" class="link-dark rounded">Status Processamento</a></li>
+              <li><a href="#" class="link-dark rounded">Upload</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#documentacao" aria-expanded="false">
+            Documentação
+          </button>
+          <div class="collapse" id="documentacao">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-dark rounded">Listar</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center">
+            Monitora Infra
+          </button>
+        </li>
+      </ul>
+    </div>
+  </aside>
 
-<div class="flex-shrink-0 p-3 bg-vooo mt-0" style="width: 280px;">  
-  <input class="form-control mb-2" placeholder="Buscar">
-  <ul class="list-unstyled ps-0">    
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center">
-        Dashboard
-      </button>      
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#onboarding" aria-expanded="false">
-        Onboard e Monitoração
-      </button>
-      <div class="collapse" id="onboarding">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Onboard</a></li>
-          <li><a href="#" class="link-dark rounded">Autorização Cielo</a></li>
-          <li><a href="#" class="link-dark rounded">Monitoração</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#clientes" aria-expanded="false">
-        Clientes
-      </button>
-      <div class="collapse" id="clientes">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a routerLink="/cliente_listar" class="link-dark rounded">Listar</a></li>
-          <li><a href="#" class="link-dark rounded">Novo</a></li>
-          <li><a href="#" class="link-dark rounded">Conectores</a></li>
-          <li><a href="#" class="link-dark rounded">Pagador</a></li>
-          <li><a href="#" class="link-dark rounded">Grupos Econômicos</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#provedores" aria-expanded="false">
-        Provedores
-      </button>
-      <div class="collapse" id="provedores">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Listar</a></li>
-          <li><a href="#" class="link-dark rounded">Novo</a></li>
-          <li><a href="#" class="link-dark rounded">Mapeamento</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#agregadores" aria-expanded="false">
-        Agregadores
-      </button>
-      <div class="collapse" id="agregadores">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Listar</a></li>
-          <li><a href="#" class="link-dark rounded">Novo Agregador</a></li>
-          <li><a href="#" class="link-dark rounded">Listar Usuários</a></li>
-          <li><a href="#" class="link-dark rounded">Novo Usuário Agregador</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#bilhetagem" aria-expanded="false">
-        Bilhetagem
-      </button>
-      <div class="collapse" id="bilhetagem">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Listar</a></li>
-          <li><a href="#" class="link-dark rounded">Nova Bilhetagem</a></li>          
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#usuarios" aria-expanded="false">
-        Usuários
-      </button>
-      <div class="collapse" id="usuarios">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Listar</a></li>
-          <li><a href="#" class="link-dark rounded">Novo</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#monitoramento" aria-expanded="false">
-        Monitoramento de Extratos
-      </button>
-      <div class="collapse" id="monitoramento">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Resumo</a></li>
-          <li><a href="#" class="link-dark rounded">Detalhes</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#bins" aria-expanded="false">
-        Bins
-      </button>
-      <div class="collapse" id="bins">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Consultar</a></li>
-          <li><a href="#" class="link-dark rounded">Efetividade</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#arquivos" aria-expanded="false">
-        Arquivos
-      </button>
-      <div class="collapse" id="arquivos">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Caminhos</a></li>
-          <li><a href="#" class="link-dark rounded">Status Processamento</a></li>
-          <li><a href="#" class="link-dark rounded">Upload</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#documentacao" aria-expanded="false">
-        Documentação
-      </button>
-      <div class="collapse" id="documentacao">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Listar</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center">
-        Monitora Infra
-      </button>      
-    </li>       
-  </ul>  
+  <main class="t-main">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+  <footer class="t-footer">meu rodape</footer>
 </div>
