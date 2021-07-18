@@ -8,6 +8,10 @@ import { TemplateComponent } from './template/template.component';
 import { NovoClienteComponent } from './cliente/novo-cliente/novo-cliente.component';
 import { ListaClientesComponent } from './cliente/lista-clientes/lista-clientes.component';
 import { ConectoresComponent } from './cliente/conectores/conectores.component';
+import { FooterComponent } from './template/footer/footer.component';
+import { HeaderComponent } from './template/header/header.component';
+import { MenuComponent } from './template/menu/menu.component';
+import { ContentComponent } from './template/content/content.component';
 
 
 @NgModule({
@@ -17,7 +21,11 @@ import { ConectoresComponent } from './cliente/conectores/conectores.component';
     TemplateComponent,
     ListaClientesComponent,
     NovoClienteComponent,
-    ConectoresComponent
+    ConectoresComponent,
+    FooterComponent,
+    HeaderComponent,
+    MenuComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
