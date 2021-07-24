@@ -13,6 +13,7 @@ import { MenuComponent } from './template/menu/menu.component';
 import { ContentComponent } from './template/content/content.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './authenticate/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { LoginComponent } from './authenticate/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
