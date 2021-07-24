@@ -14,6 +14,7 @@ import { ContentComponent } from './template/content/content.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './authenticate/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './404/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     MenuComponent,
     ContentComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
