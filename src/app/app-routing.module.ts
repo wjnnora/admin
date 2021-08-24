@@ -1,3 +1,4 @@
+import { Cliente_novoComponent } from './cliente/cliente_novo/cliente_novo.component';
 import { TemplateComponent } from './template/template.component';
 import { LoginComponent } from './login/login.component';
 import { Cliente_listarComponent } from './cliente/cliente_listar/cliente_listar.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {
     path: 'cliente', component: ClienteComponent, children: [
       { path: 'listar', component: Cliente_listarComponent },
+      { path: 'novo', component: Cliente_novoComponent },
     ] 
   },
   { path: '', redirectTo: 'login', pathMatch: 'full' },

@@ -11,6 +11,8 @@ import { MenuComponent } from './template/menu/menu.component';
 import { ContentComponent } from './template/content/content.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { Cliente_listarComponent } from './cliente/cliente_listar/cliente_listar.component';
+import { Cliente_novoComponent } from './cliente/cliente_novo/cliente_novo.component';
+import { TituloComponent } from './_shared/titulo/titulo.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { Cliente_listarComponent } from './cliente/cliente_listar/cliente_listar
     MenuComponent,
     ContentComponent,
     ClienteComponent,
-    Cliente_listarComponent    
+    Cliente_listarComponent,
+    Cliente_novoComponent,
+    TituloComponent
   ],
   imports: [
     BrowserModule,
