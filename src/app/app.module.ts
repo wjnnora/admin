@@ -13,10 +13,11 @@ import { ClienteComponent } from './cliente/cliente.component';
 import { Cliente_listarComponent } from './cliente/cliente_listar/cliente_listar.component';
 import { Cliente_novoComponent } from './cliente/cliente_novo/cliente_novo.component';
 import { TituloComponent } from './_shared/titulo/titulo.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     LoginComponent,
     TemplateComponent,
@@ -27,8 +28,9 @@ import { TituloComponent } from './_shared/titulo/titulo.component';
     ClienteComponent,
     Cliente_listarComponent,
     Cliente_novoComponent,
-    TituloComponent
-  ],
+    TituloComponent,
+      DashboardComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
