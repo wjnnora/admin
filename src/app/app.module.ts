@@ -9,6 +9,8 @@ import { FooterComponent } from './template/footer/footer.component';
 import { HeaderComponent } from './template/header/header.component';
 import { MenuComponent } from './template/menu/menu.component';
 import { ContentComponent } from './template/content/content.component';
+import { ClienteComponent } from './cliente/cliente.component';
+import { Cliente_listarComponent } from './cliente/cliente_listar/cliente_listar.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ContentComponent } from './template/content/content.component';
     FooterComponent,
     HeaderComponent,
     MenuComponent,
-    ContentComponent
+    ContentComponent,
+    ClienteComponent,
+    Cliente_listarComponent    
   ],
   imports: [
     BrowserModule,
